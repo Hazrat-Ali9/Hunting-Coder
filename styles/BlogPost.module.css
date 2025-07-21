@@ -1,0 +1,105 @@
+/* BlogPost.module.css */
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+  }
+  .errorContainer{
+    margin: 0 auto;
+    max-width: 800px;
+    margin-top: 2rem;
+  }
+  .errorContainer h1{
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+  }
+  .errorContainer span{
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+ 
+  .title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    position: relative;
+  }
+  
+  .title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, #4299e1, #38b2ac);
+    border-radius: 2px;
+  }
+  
+  .content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-top: 2rem;
+  }
+  
+  .content p {
+    margin-bottom: 1.5rem;
+  }
+  
+  .content p:first-of-type {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  
+  .meta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+  }
+  
+  .divider {
+    height: 1px;
+    background: #e2e8f0;
+    margin: 2rem 0;
+  }
+  
+  /* Code block styling (if you add code snippets later) */
+  .codeBlock {
+    background: #f7fafc;
+    border-radius: 6px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    overflow-x: auto;
+    border-left: 4px solid #4299e1;
+  }
+  
+  /* Image styling (if you add images later) */
+  .image {
+    border-radius: 8px;
+    margin: 1.5rem 0;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .container {
+      padding: 1.5rem 1rem;
+    }
+    
+    .title {
+      font-size: 2rem;
+    }
+    
+    .content {
+      font-size: 1rem;
+    }
+    
+    .content p:first-of-type {
+      font-size: 1.1rem;
+    }
+  }

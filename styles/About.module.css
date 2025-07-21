@@ -1,0 +1,136 @@
+
+  
+  /* Base styles */
+  .aboutContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    color: var(--text-primary);
+    background-color: var(--bg-primary);
+    min-height: 100vh;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Hero section */
+  .heroSection {
+    text-align: center;
+    padding: 60px 20px;
+    background: var(--gradient);
+    color: white;
+    border-radius: 0 0 20px 20px;
+    margin-bottom: 40px;
+  }
+  
+  .mainTitle {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    font-weight: 800;
+    letter-spacing: 1px;
+  }
+  
+  .tagline {
+    font-size: 1.5rem;
+    opacity: 0.9;
+    font-weight: 300;
+  }
+  
+  /* Content sections */
+  .contentSection {
+    padding: 0 20px;
+  }
+  
+  .section {
+    margin-bottom: 60px;
+  }
+  
+  .sectionTitle {
+    font-size: 2rem;
+    color: var(--text-accent);
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid var(--text-secondary);
+    display: inline-block;
+  }
+  
+  .sectionContent {
+    line-height: 1.8;
+    font-size: 1.1rem;
+    color: var(--text-primary);
+  }
+  
+  /* Services grid */
+  .servicesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+  }
+  
+  .serviceCard {
+    background: var(--bg-secondary);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: var(--text-primary);
+  }
+  
+  .serviceCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  }
+  
+  .serviceCard h3 {
+    color: var(--text-secondary);
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+  }
+  
+  /* Contact info */
+  .contactInfo {
+    background: var(--bg-tertiary);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    color: var(--text-primary);
+  }
+  
+  .contactInfo p {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .mainTitle {
+      font-size: 2.2rem;
+    }
+    
+    .tagline {
+      font-size: 1.2rem;
+    }
+    
+    .sectionTitle {
+      font-size: 1.8rem;
+    }
+    
+    .servicesGrid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .heroSection {
+      padding: 40px 15px;
+    }
+    
+    .mainTitle {
+      font-size: 1.8rem;
+    }
+    
+    .sectionContent {
+      font-size: 1rem;
+    }
+  }
