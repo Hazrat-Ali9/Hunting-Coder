@@ -6,7 +6,7 @@ import NProgress from 'nprogress';
 import 'nprogress/nprogress.css';
 // Optional: customize speed or show spinner
 NProgress.configure({ showSpinner: false, speed: 1000 });
-
+// apps js
 Router.events.on('routeChangeStart', () => {
   NProgress.start();
 });
