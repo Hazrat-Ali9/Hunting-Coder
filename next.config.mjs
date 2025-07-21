@@ -9,5 +9,5 @@ const nextConfig = {
     unoptimized: true, // Disables Image Optimization API (required for static export)
   },
 };
-
+// next config
 export default nextConfig;
